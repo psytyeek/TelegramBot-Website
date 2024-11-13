@@ -103,7 +103,7 @@ showChapter.addEventListener('click', function handleShowChapterClick() {
 
         Download_Pc.addEventListener("click", function handleClick() {
             pcDownloadHandler(data);
-            //Download_Pc.removeEventListener("click", handleClick); // Remove the event listener after the first click
+            Download_Pc.removeEventListener("click", handleClick); // Remove the event listener after the first click
         });
         
 
@@ -129,7 +129,7 @@ function pcDownloadHandler(data) {
 
     console.log(data);
 
-    fetch("https://solid-tribble-q77g77g55ww5f69v6-7861.app.github.dev/data", {
+    fetch("https://muftukmallbot.koyeb.app/data", {
         method: "POST",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify(data)
