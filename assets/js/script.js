@@ -138,7 +138,7 @@ function pcDownloadHandler(data) {
     .then(data => {
         console.log("Success:", data);
 	alert("File sended to Bot. Please check Script Maker Bot")
-	//window.location.href = './send.html';
+	window.location.href = './send.html';
     })
     .catch(error => {
         console.error("Error:", error.message);
